@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
         printf("Значение интеграла: %.6f\n", total_integral);
         printf("Астрономическое время: %f секунд\n", end_time - start_time);
 
-        FILE *f = fopen("results.txt", "a");
+        FILE *f = fopen("results1.txt", "a");
         fprintf(f, "Processes: %d, Time: %f seconds, Integral: %f\n", size, end_time - start_time, total_integral);
         fclose(f);
     }
